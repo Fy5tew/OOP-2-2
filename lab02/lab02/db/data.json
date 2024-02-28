@@ -1,0 +1,672 @@
+[
+  {
+    "Name": "TestPC",
+    "Type": "Ноутбук",
+    "InstallationDate": "2024-02-08T00:00:00",
+    "InstallationTime": "12:45",
+    "RAM": {
+      "Type": "DDR4",
+      "Volume": 32,
+      "VolumeType": "GB"
+    },
+    "ROM": {
+      "Type": "SSD",
+      "Volume": 512,
+      "VolumeType": "GB"
+    },
+    "CPU": {
+      "Manufacturer": "Intel",
+      "Series": "Core",
+      "Model": "i5-13900K",
+      "CoresCount": 12,
+      "WorkingFrequency": {
+        "Value": 54.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 57.0,
+        "Type": "GHz"
+      },
+      "Architecture": "64-Bit",
+      "Cache": [
+        {
+          "Type": "L1",
+          "Volume": 8,
+          "VolumeType": "B"
+        },
+        {
+          "Type": "L2",
+          "Volume": 16,
+          "VolumeType": "KB"
+        },
+        {
+          "Type": "L3",
+          "Volume": 32,
+          "VolumeType": "MB"
+        }
+      ]
+    },
+    "GPU": {
+      "Manufacturer": "Nvidia",
+      "Series": "GeForce",
+      "Model": "RTX 3060",
+      "Memory": {
+        "Type": "GPU",
+        "Volume": 24,
+        "VolumeType": "GB"
+      },
+      "WorkingFrequency": {
+        "Value": 67.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 75.0,
+        "Type": "GHz"
+      },
+      "DX11Support": false
+    }
+  },
+  {
+    "Name": "TestPC",
+    "Type": "Сервер",
+    "InstallationDate": "2024-02-08T00:00:00",
+    "InstallationTime": "12:45",
+    "RAM": {
+      "Type": "DDR4",
+      "Volume": 32,
+      "VolumeType": "GB"
+    },
+    "ROM": {
+      "Type": "SSD",
+      "Volume": 512,
+      "VolumeType": "GB"
+    },
+    "CPU": {
+      "Manufacturer": "Intel",
+      "Series": "Core",
+      "Model": "i5-13900K",
+      "CoresCount": 12,
+      "WorkingFrequency": {
+        "Value": 54.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 57.0,
+        "Type": "GHz"
+      },
+      "Architecture": "64-Bit",
+      "Cache": [
+        {
+          "Type": "L1",
+          "Volume": 8,
+          "VolumeType": "B"
+        },
+        {
+          "Type": "L2",
+          "Volume": 16,
+          "VolumeType": "KB"
+        },
+        {
+          "Type": "L3",
+          "Volume": 32,
+          "VolumeType": "MB"
+        }
+      ]
+    },
+    "GPU": {
+      "Manufacturer": "Nvidia",
+      "Series": "GeForce",
+      "Model": "RTX 3060",
+      "Memory": {
+        "Type": "GPU",
+        "Volume": 24,
+        "VolumeType": "GB"
+      },
+      "WorkingFrequency": {
+        "Value": 67.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 75.0,
+        "Type": "GHz"
+      },
+      "DX11Support": true
+    }
+  },
+  {
+    "Name": "TestPC",
+    "Type": "Сервер",
+    "InstallationDate": "2024-02-08T00:00:00",
+    "InstallationTime": "12:45",
+    "RAM": {
+      "Type": "DDR4",
+      "Volume": 32,
+      "VolumeType": "GB"
+    },
+    "ROM": {
+      "Type": "SSD",
+      "Volume": 512,
+      "VolumeType": "GB"
+    },
+    "CPU": {
+      "Manufacturer": "Intel",
+      "Series": "Core",
+      "Model": "i5-13900K",
+      "CoresCount": 12,
+      "WorkingFrequency": {
+        "Value": 54.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 57.0,
+        "Type": "GHz"
+      },
+      "Architecture": "64-Bit",
+      "Cache": [
+        {
+          "Type": "L1",
+          "Volume": 8,
+          "VolumeType": "B"
+        },
+        {
+          "Type": "L2",
+          "Volume": 16,
+          "VolumeType": "KB"
+        },
+        {
+          "Type": "L3",
+          "Volume": 32,
+          "VolumeType": "MB"
+        }
+      ]
+    },
+    "GPU": {
+      "Manufacturer": "Nvidia",
+      "Series": "GeForce",
+      "Model": "RTX 3060",
+      "Memory": {
+        "Type": "GPU",
+        "Volume": 24,
+        "VolumeType": "GB"
+      },
+      "WorkingFrequency": {
+        "Value": 67.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 75.0,
+        "Type": "GHz"
+      },
+      "DX11Support": true
+    }
+  },
+  {
+    "Name": "TestPC",
+    "Type": "Сервер",
+    "InstallationDate": "2024-02-08T00:00:00",
+    "InstallationTime": "12:45",
+    "RAM": {
+      "Type": "DDR4",
+      "Volume": 32,
+      "VolumeType": "GB"
+    },
+    "ROM": {
+      "Type": "SSD",
+      "Volume": 512,
+      "VolumeType": "GB"
+    },
+    "CPU": {
+      "Manufacturer": "Intel",
+      "Series": "Core",
+      "Model": "i5-13900K",
+      "CoresCount": 12,
+      "WorkingFrequency": {
+        "Value": 54.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 57.0,
+        "Type": "GHz"
+      },
+      "Architecture": "64-Bit",
+      "Cache": [
+        {
+          "Type": "L1",
+          "Volume": 8,
+          "VolumeType": "B"
+        },
+        {
+          "Type": "L2",
+          "Volume": 16,
+          "VolumeType": "KB"
+        },
+        {
+          "Type": "L3",
+          "Volume": 32,
+          "VolumeType": "MB"
+        }
+      ]
+    },
+    "GPU": {
+      "Manufacturer": "Nvidia",
+      "Series": "GeForce",
+      "Model": "RTX 3060",
+      "Memory": {
+        "Type": "GPU",
+        "Volume": 24,
+        "VolumeType": "GB"
+      },
+      "WorkingFrequency": {
+        "Value": 67.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 75.0,
+        "Type": "GHz"
+      },
+      "DX11Support": true
+    }
+  },
+  {
+    "Name": "TestPC",
+    "Type": "Сервер",
+    "InstallationDate": "2024-02-08T00:00:00",
+    "InstallationTime": "12:45",
+    "RAM": {
+      "Type": "DDR4",
+      "Volume": 32,
+      "VolumeType": "GB"
+    },
+    "ROM": {
+      "Type": "SSD",
+      "Volume": 512,
+      "VolumeType": "GB"
+    },
+    "CPU": {
+      "Manufacturer": "Intel",
+      "Series": "Core",
+      "Model": "i5-13900K",
+      "CoresCount": 12,
+      "WorkingFrequency": {
+        "Value": 54.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 57.0,
+        "Type": "GHz"
+      },
+      "Architecture": "64-Bit",
+      "Cache": [
+        {
+          "Type": "L1",
+          "Volume": 8,
+          "VolumeType": "B"
+        },
+        {
+          "Type": "L2",
+          "Volume": 16,
+          "VolumeType": "KB"
+        },
+        {
+          "Type": "L3",
+          "Volume": 32,
+          "VolumeType": "MB"
+        }
+      ]
+    },
+    "GPU": {
+      "Manufacturer": "Nvidia",
+      "Series": "GeForce",
+      "Model": "RTX 3060",
+      "Memory": {
+        "Type": "GPU",
+        "Volume": 24,
+        "VolumeType": "GB"
+      },
+      "WorkingFrequency": {
+        "Value": 67.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 75.0,
+        "Type": "GHz"
+      },
+      "DX11Support": true
+    }
+  },
+  {
+    "Name": "TestPC",
+    "Type": "Сервер",
+    "InstallationDate": "2024-02-08T00:00:00",
+    "InstallationTime": "12:45",
+    "RAM": {
+      "Type": "DDR4",
+      "Volume": 32,
+      "VolumeType": "GB"
+    },
+    "ROM": {
+      "Type": "SSD",
+      "Volume": 512,
+      "VolumeType": "GB"
+    },
+    "CPU": {
+      "Manufacturer": "Intel",
+      "Series": "Core",
+      "Model": "i5-13900K",
+      "CoresCount": 12,
+      "WorkingFrequency": {
+        "Value": 54.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 57.0,
+        "Type": "GHz"
+      },
+      "Architecture": "64-Bit",
+      "Cache": [
+        {
+          "Type": "L1",
+          "Volume": 8,
+          "VolumeType": "B"
+        },
+        {
+          "Type": "L2",
+          "Volume": 16,
+          "VolumeType": "KB"
+        },
+        {
+          "Type": "L3",
+          "Volume": 32,
+          "VolumeType": "MB"
+        }
+      ]
+    },
+    "GPU": {
+      "Manufacturer": "Nvidia",
+      "Series": "GeForce",
+      "Model": "RTX 3060",
+      "Memory": {
+        "Type": "GPU",
+        "Volume": 24,
+        "VolumeType": "GB"
+      },
+      "WorkingFrequency": {
+        "Value": 67.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 75.0,
+        "Type": "GHz"
+      },
+      "DX11Support": true
+    }
+  },
+  {
+    "Name": "Fy5tewPC",
+    "Type": "Ноутбук",
+    "InstallationDate": "2023-07-23T00:00:00",
+    "InstallationTime": "11:45",
+    "RAM": {
+      "Type": "DDR4",
+      "Volume": 16,
+      "VolumeType": "GB"
+    },
+    "ROM": {
+      "Type": "SSD",
+      "Volume": 512,
+      "VolumeType": "GB"
+    },
+    "CPU": {
+      "Manufacturer": "Intel",
+      "Series": "Core",
+      "Model": "i5-12450H",
+      "CoresCount": 8,
+      "WorkingFrequency": {
+        "Value": 2.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 2.0,
+        "Type": "GHz"
+      },
+      "Architecture": "64-Bit",
+      "Cache": [
+        {
+          "Type": "L1",
+          "Volume": 704,
+          "VolumeType": "KB"
+        },
+        {
+          "Type": "L2",
+          "Volume": 7,
+          "VolumeType": "MB"
+        },
+        {
+          "Type": "L3",
+          "Volume": 12,
+          "VolumeType": "MB"
+        }
+      ]
+    },
+    "GPU": {
+      "Manufacturer": "Nvidia",
+      "Series": "GeForce",
+      "Model": "RTX 3060 Laptop",
+      "Memory": {
+        "Type": "GPU",
+        "Volume": 8,
+        "VolumeType": "GB"
+      },
+      "WorkingFrequency": {
+        "Value": 1425.0,
+        "Type": "MHz"
+      },
+      "MaxFrequency": {
+        "Value": 1425.0,
+        "Type": "MHz"
+      },
+      "DX11Support": true
+    }
+  },
+  {
+    "Name": "fhjkl fghjk fghjk",
+    "Type": "Ноутбук",
+    "InstallationDate": "2024-02-07T00:00:00",
+    "InstallationTime": "12:22",
+    "RAM": {
+      "Type": "DDR3 SDRAM",
+      "Volume": 23456789,
+      "VolumeType": "KB"
+    },
+    "ROM": {
+      "Type": "SSD",
+      "Volume": 345678,
+      "VolumeType": "KB"
+    },
+    "CPU": {
+      "Manufacturer": "Dfghj fghjk fghjk",
+      "Series": "Dfghj fghj fghjm",
+      "Model": "Sdfghj dfghjk 45678",
+      "CoresCount": 23456789,
+      "WorkingFrequency": {
+        "Value": 36789.0,
+        "Type": "MHz"
+      },
+      "MaxFrequency": {
+        "Value": 12345678.0,
+        "Type": "MHz"
+      },
+      "Architecture": "64-Bit",
+      "Cache": [
+        {
+          "Type": "L1",
+          "Volume": 23456789,
+          "VolumeType": "KB"
+        },
+        {
+          "Type": "L2",
+          "Volume": 34567,
+          "VolumeType": "KB"
+        },
+        {
+          "Type": "L3",
+          "Volume": 4567,
+          "VolumeType": "B"
+        }
+      ]
+    },
+    "GPU": {
+      "Manufacturer": "dhjkl fghj dfghjk",
+      "Series": "fgbnm 456789",
+      "Model": "fghjmn cfr45678",
+      "Memory": {
+        "Type": "GPU",
+        "Volume": 3456789,
+        "VolumeType": "KB"
+      },
+      "WorkingFrequency": {
+        "Value": 2345678.0,
+        "Type": "MHz"
+      },
+      "MaxFrequency": {
+        "Value": 2345678.0,
+        "Type": "MHz"
+      },
+      "DX11Support": true
+    }
+  },
+  {
+    "Name": "fguhj;jl",
+    "Type": "Ноутбук",
+    "InstallationDate": "2024-02-27T00:00:00",
+    "InstallationTime": "23:45",
+    "RAM": {
+      "Type": "DDR4",
+      "Volume": 4556,
+      "VolumeType": "GB"
+    },
+    "ROM": {
+      "Type": "SSD",
+      "Volume": 3245,
+      "VolumeType": "GB"
+    },
+    "CPU": {
+      "Manufacturer": "gfghjk",
+      "Series": "gjhbkjkl",
+      "Model": "ghbjn",
+      "CoresCount": 5463,
+      "WorkingFrequency": {
+        "Value": 45657.0,
+        "Type": "MHz"
+      },
+      "MaxFrequency": {
+        "Value": 45657687.0,
+        "Type": "GHz"
+      },
+      "Architecture": "64-Bit",
+      "Cache": [
+        {
+          "Type": "L1",
+          "Volume": 457687,
+          "VolumeType": "KB"
+        },
+        {
+          "Type": "L2",
+          "Volume": 45676,
+          "VolumeType": "MB"
+        },
+        {
+          "Type": "L3",
+          "Volume": 35465876,
+          "VolumeType": "MB"
+        }
+      ]
+    },
+    "GPU": {
+      "Manufacturer": "hdxfjkl",
+      "Series": "cfhgjhk",
+      "Model": "cghkjh",
+      "Memory": {
+        "Type": "GPU",
+        "Volume": 456,
+        "VolumeType": "GB"
+      },
+      "WorkingFrequency": {
+        "Value": 4656.0,
+        "Type": "GHz"
+      },
+      "MaxFrequency": {
+        "Value": 46576.0,
+        "Type": "GHz"
+      },
+      "DX11Support": true
+    }
+  },
+  {
+    "Name": "вроть каро кенрол",
+    "Type": "Терминал",
+    "InstallationDate": "2024-02-08T00:00:00",
+    "InstallationTime": "23:33",
+    "RAM": {
+      "Type": "DDR2 SDRAM",
+      "Volume": 367,
+      "VolumeType": "MB"
+    },
+    "ROM": {
+      "Type": "SSD",
+      "Volume": 34567,
+      "VolumeType": "GB"
+    },
+    "CPU": {
+      "Manufacturer": "ао апро",
+      "Series": "апро апро",
+      "Model": "аро апро",
+      "CoresCount": 34567,
+      "WorkingFrequency": {
+        "Value": 34567.0,
+        "Type": "MHz"
+      },
+      "MaxFrequency": {
+        "Value": 4567.0,
+        "Type": "GHz"
+      },
+      "Architecture": "64-Bit",
+      "Cache": [
+        {
+          "Type": "L1",
+          "Volume": 345678,
+          "VolumeType": "KB"
+        },
+        {
+          "Type": "L2",
+          "Volume": 34567,
+          "VolumeType": "KB"
+        },
+        {
+          "Type": "L3",
+          "Volume": 3456,
+          "VolumeType": "MB"
+        }
+      ]
+    },
+    "GPU": {
+      "Manufacturer": "аол прол про",
+      "Series": "кенргол",
+      "Model": "проб",
+      "Memory": {
+        "Type": "GPU",
+        "Volume": 345678,
+        "VolumeType": "MB"
+      },
+      "WorkingFrequency": {
+        "Value": 345678.0,
+        "Type": "MHz"
+      },
+      "MaxFrequency": {
+        "Value": 456789.0,
+        "Type": "GHz"
+      },
+      "DX11Support": true
+    }
+  }
+]
