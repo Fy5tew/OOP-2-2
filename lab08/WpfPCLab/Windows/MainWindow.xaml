@@ -1,0 +1,298 @@
+﻿<Window x:Class="WpfPCLab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:WpfPCLab"
+        mc:Ignorable="d"
+        Title="PC Lab" Height="800" Width="1000" Loaded="Window_Loaded" Closed="Window_Closed" MinWidth="1000" MinHeight="700" MaxWidth="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <local:ByteArrayToImageConverter x:Key="ByteArrayToImageConverter" />
+    </Window.Resources>
+    <Grid>
+        <Button x:Name="BackButton" Content="&lt;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="50" Height="30" FontSize="16" Click="BackButton_Click"/>
+        <Button x:Name="ForwardButton" Content="&gt;" HorizontalAlignment="Left" Margin="65,10,0,0" VerticalAlignment="Top" Width="50" Height="30" FontSize="16" Click="ForwardButton_Click"/>
+        <TabControl x:Name="TabsTabControl" Margin="0,45,0,222">
+            <TabItem Header="RAM">
+                <Grid>
+                    <GroupBox Header="Create" Margin="0,0,694,0">
+                        <Grid>
+                            <GroupBox Header="Type" Height="50" Margin="0,10,0,0" VerticalAlignment="Top">
+                                <ComboBox x:Name="RamCreateTypeComboBox">
+                                    <sys:String>DDR1</sys:String>
+                                    <sys:String>DDR2</sys:String>
+                                    <sys:String>DDR3</sys:String>
+                                    <sys:String>DDR4</sys:String>
+                                    <sys:String>DDR5</sys:String>
+                                </ComboBox>
+                            </GroupBox>
+                            <GroupBox Header="Volume" Height="50" Margin="0,65,0,0" VerticalAlignment="Top">
+                                <Grid>
+                                    <TextBox x:Name="RamCreateVolumeTextBox" Margin="0,0,55,0" PreviewTextInput="OnlyFloat_PreviewTextInput" MaxLength="15" />
+                                    <Label Content="GB" HorizontalAlignment="Right" Width="50" Margin="226,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                                </Grid>
+                            </GroupBox>
+                            <Button x:Name="RamCreateButton" Content="Create" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Width="268" Click="RamCreateButton_Click" Background="Lime" Foreground="White" Height="30" FontSize="14"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Update" Margin="347,0,347,0">
+                        <Grid>
+                            <GroupBox Header="Type" Height="50" Margin="0,65,0,0" VerticalAlignment="Top">
+                                <ComboBox x:Name="RamUpdateTypeComboBox">
+                                    <sys:String>DDR1</sys:String>
+                                    <sys:String>DDR2</sys:String>
+                                    <sys:String>DDR3</sys:String>
+                                    <sys:String>DDR4</sys:String>
+                                    <sys:String>DDR5</sys:String>
+                                </ComboBox>
+                            </GroupBox>
+                            <GroupBox Header="ID" Height="50" Margin="0,10,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="RamUpdateIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <GroupBox Header="Volume" Height="50" Margin="0,120,0,0" VerticalAlignment="Top">
+                                <Grid>
+                                    <TextBox x:Name="RamUpdateVolumeTextBox" Margin="0,0,55,0" PreviewTextInput="OnlyFloat_PreviewTextInput" MaxLength="15" />
+                                    <Label Content="GB" HorizontalAlignment="Right" Width="50" Margin="226,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                                </Grid>
+                            </GroupBox>
+                            <Button x:Name="RamUpdateButton" Content="Update" HorizontalAlignment="Center" Margin="0,175,0,0" VerticalAlignment="Top" Width="268" Click="RamUpdateButton_Click" Background="Blue" Foreground="White" Height="30" FontSize="14"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Delete" Margin="694,0,0,0">
+                        <Grid>
+                            <GroupBox Header="ID" Height="50" Margin="0,10,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="RamDeleteIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <Button x:Name="RamDeleteButton" Content="Delete" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Top" Width="268" Click="RamDeleteButton_Click" Background="Red" Foreground="White" Height="30" FontSize="14"/>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="ROM">
+                <Grid>
+                    <GroupBox Header="Create" Margin="0,0,694,0">
+                        <Grid>
+                            <GroupBox Header="Type" Height="50" Margin="0,10,0,0" VerticalAlignment="Top">
+                                <ComboBox x:Name="RomCreateTypeComboBox">
+                                    <sys:String>HDD</sys:String>
+                                    <sys:String>SSD</sys:String>
+                                    <sys:String>SSHD</sys:String>
+                                    <sys:String>NVMe SSD</sys:String>
+                                </ComboBox>
+                            </GroupBox>
+                            <GroupBox Header="Volume" Height="50" Margin="0,65,0,0" VerticalAlignment="Top">
+                                <Grid>
+                                    <TextBox x:Name="RomCreateVolumeTextBox" Margin="0,0,55,0" PreviewTextInput="OnlyFloat_PreviewTextInput" MaxLength="15" />
+                                    <Label Content="GB" HorizontalAlignment="Right" Width="50" Margin="226,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                                </Grid>
+                            </GroupBox>
+                            <Button x:Name="RomCreateButton" Content="Create" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Width="268" Click="RomCreateButton_Click" Background="Lime" Foreground="White" Height="30" FontSize="14"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Update" Margin="347,0,347,0">
+                        <Grid>
+                            <GroupBox Header="Type" Height="50" Margin="0,65,0,0" VerticalAlignment="Top">
+                                <ComboBox x:Name="RomUpdateTypeComboBox">
+                                    <sys:String>HDD</sys:String>
+                                    <sys:String>SSD</sys:String>
+                                    <sys:String>SSHD</sys:String>
+                                    <sys:String>NVMe SSD</sys:String>
+                                </ComboBox>
+                            </GroupBox>
+                            <GroupBox Header="ID" Height="50" Margin="0,10,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="RomUpdateIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <GroupBox Header="Volume" Height="50" Margin="0,120,0,0" VerticalAlignment="Top">
+                                <Grid>
+                                    <TextBox x:Name="RomUpdateVolumeTextBox" Margin="0,0,55,0" PreviewTextInput="OnlyFloat_PreviewTextInput" MaxLength="15" />
+                                    <Label Content="GB" HorizontalAlignment="Right" Width="50" Margin="226,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                                </Grid>
+                            </GroupBox>
+                            <Button x:Name="RomUpdateButton" Content="Update" HorizontalAlignment="Center" Margin="0,175,0,0" VerticalAlignment="Top" Width="268" Click="RomUpdateButton_Click" Background="Blue" Foreground="White" Height="30" FontSize="14"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Delete" Margin="694,0,0,0">
+                        <Grid>
+                            <GroupBox Header="ID" Height="50" Margin="0,10,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="RomDeleteIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <Button x:Name="RomDeleteButton" Content="Delete" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Top" Width="268" Click="RomDeleteButton_Click" Background="Red" Foreground="White" Height="30" FontSize="14"/>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="CPU">
+                <Grid>
+                    <GroupBox Header="Create" Margin="0,0,694,0">
+                        <Grid Height="470">
+                            <Button x:Name="CpuCreateButton" Content="Create" HorizontalAlignment="Center" Margin="0,365,0,0" Width="268" Click="CpuCreateButton_Click" Background="Lime" Foreground="White" FontSize="14" Height="30" VerticalAlignment="Top"/>
+                            <GroupBox Header="Manufacturer" Height="50" Margin="0,10,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="CpuCreateManufacturerTextBox" MaxLength="15" />
+                            </GroupBox>
+                            <GroupBox Header="Series" Height="50" Margin="0,60,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="CpuCreateSeriesTextBox" MaxLength="15" />
+                            </GroupBox>
+                            <GroupBox Header="Model" Height="50" Margin="0,111,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="CpuCreateModelTextBox" MaxLength="15" />
+                            </GroupBox>
+                            <GroupBox Header="Cores" Height="50" Margin="0,161,0,0" VerticalAlignment="Top" PreviewTextInput="OnlyInt_PreviewTextInput">
+                                <TextBox x:Name="CpuCreateCoresTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <GroupBox Header="MaxFriequency" Height="50" VerticalAlignment="Center">
+                                <Grid>
+                                    <TextBox x:Name="CpuCreateMaxFriequencyTextBox" Margin="0,0,55,0" PreviewTextInput="OnlyFloat_PreviewTextInput" MaxLength="15" />
+                                    <Label Content="MHz" HorizontalAlignment="Right" Width="50" Margin="226,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Header="WorkingFriequency" Height="50" VerticalAlignment="Top" Margin="0,260,0,0">
+                                <Grid>
+                                    <TextBox x:Name="CpuCreateWorkingFriequencyTextBox" Margin="0,0,55,0" PreviewTextInput="OnlyFloat_PreviewTextInput" MaxLength="15" />
+                                    <Label Content="MHz" HorizontalAlignment="Right" Width="50" Margin="226,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Header="Architecture" Height="50" Margin="0,310,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="CpuCreateArchitectureTextBox" MaxLength="15" />
+                            </GroupBox>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Update" Margin="347,0,347,0">
+                        <Grid>
+                            <GroupBox Header="ID" Height="50" Margin="0,10,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="CpuUpdateIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <Button x:Name="CpuUpdateButton" Content="Update" HorizontalAlignment="Center" Margin="0,417,0,0" Width="268" Click="CpuUpdateButton_Click" Background="Blue" Foreground="White" FontSize="14" Height="30" VerticalAlignment="Top"/>
+                            <GroupBox Header="Manufacturer" Height="50" Margin="0,62,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="CpuUpdateManufacturerTextBox" MaxLength="15" />
+                            </GroupBox>
+                            <GroupBox Header="Series" Height="50" Margin="0,112,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="CpuUpdateSeriesTextBox" MaxLength="15" />
+                            </GroupBox>
+                            <GroupBox Header="Model" Height="50" Margin="0,163,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="CpuUpdateModelTextBox" MaxLength="15" />
+                            </GroupBox>
+                            <GroupBox Header="Cores" Height="50" Margin="0,213,0,0" VerticalAlignment="Top" PreviewTextInput="OnlyInt_PreviewTextInput">
+                                <TextBox x:Name="CpuUpdateCoresTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <GroupBox Header="MaxFriequency" Height="50" VerticalAlignment="Top" Margin="0,262,0,0">
+                                <Grid>
+                                    <TextBox x:Name="CpuUpdateMaxFriequencyTextBox" Margin="0,0,55,0" PreviewTextInput="OnlyFloat_PreviewTextInput" MaxLength="15" />
+                                    <Label Content="MHz" HorizontalAlignment="Right" Width="50" Margin="226,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Header="WorkingFriequency" Height="50" VerticalAlignment="Top" Margin="0,312,0,0">
+                                <Grid>
+                                    <TextBox x:Name="CpuUpdateWorkingFriequencyTextBox" Margin="0,0,55,0" PreviewTextInput="OnlyFloat_PreviewTextInput" MaxLength="15" />
+                                    <Label Content="MHz" HorizontalAlignment="Right" Width="50" Margin="226,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Header="Architecture" Height="50" Margin="0,362,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="CpuUpdateArchitectureTextBox" MaxLength="15" />
+                            </GroupBox>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Delete" Margin="694,0,0,0">
+                        <Grid>
+                            <GroupBox Header="ID" Height="50" Margin="0,10,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="CpuDeleteIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <Button x:Name="CpuDeleteButton" Content="Delete" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Top" Width="268" Click="CpuDeleteButton_Click" Background="Red" Foreground="White" Height="30" FontSize="14"/>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="PC">
+                <Grid>
+                    <GroupBox Header="Create" Margin="0,0,694,0">
+                        <Grid Height="470">
+                            <Button x:Name="PcCreateButton" Content="Create" HorizontalAlignment="Center" Margin="0,365,0,0" Width="268" Background="Lime" Foreground="White" FontSize="14" Height="30" VerticalAlignment="Top" Click="PcCreateButton_Click"/>
+                            <GroupBox Header="Name" Height="50" Margin="0,10,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="PcCreateNameTextBox" MaxLength="15" />
+                            </GroupBox>
+                            <GroupBox Header="Photo" Height="100" Margin="0,60,0,0" VerticalAlignment="Top">
+                                <Grid>
+                                    <Border Height="50" BorderThickness="1" Margin="10,14,198,13" BorderBrush="Black">
+                                        <Image x:Name="PcCreatePhotoPreview" />
+                                    </Border>
+                                    <Button x:Name="PcCreatePickPhotoButton" Content="Pick Photo" HorizontalAlignment="Left" Margin="83,0,0,0" Width="183" Background="#FFC500FF" Foreground="White" FontSize="14" Height="30" VerticalAlignment="Center" Click="PcCreatePickPhotoButton_Click"/>
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Header="Type" Height="50" Margin="0,160,0,0" VerticalAlignment="Top">
+                                <ComboBox x:Name="PcCreateTypeComboBox">
+                                    <sys:String>Server</sys:String>
+                                    <sys:String>PC</sys:String>
+                                    <sys:String>Laptop</sys:String>
+                                    <sys:String>Working Station</sys:String>
+                                </ComboBox>
+                            </GroupBox>
+                            <GroupBox Header="RAM ID" Height="50" VerticalAlignment="Center">
+                                <TextBox x:Name="PcCreateRamIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <GroupBox Header="ROM ID" Height="50" VerticalAlignment="Top" Margin="0,260,0,0">
+                                <TextBox x:Name="PcCreateRomIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <GroupBox Header="CPU ID" Height="50" VerticalAlignment="Top" Margin="0,310,0,0">
+                                <TextBox x:Name="PcCreateCpuIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Update" Margin="347,0,347,0">
+                        <Grid>
+                            <GroupBox Header="ID" Height="50" Margin="0,10,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="PcUpdateIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <Button x:Name="PcUpdateButton" Content="Update" HorizontalAlignment="Center" Margin="0,417,0,0" Width="268" Background="Blue" Foreground="White" FontSize="14" Height="30" VerticalAlignment="Top" Click="PcUpdateButton_Click"/>
+                            <GroupBox Header="Name" Height="50" Margin="0,62,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="PcUpdateNameTextBox" MaxLength="15" />
+                            </GroupBox>
+                            <GroupBox Header="Photo" Height="100" Margin="0,112,0,0" VerticalAlignment="Top">
+                                <Grid>
+                                    <Border Height="50" BorderThickness="1" Margin="10,14,198,13" BorderBrush="Black">
+                                        <Image x:Name="PcUpdatePhotoPreview" />
+                                    </Border>
+                                    <Button x:Name="PcUpdatePickPhotoButton" Content="Pick Photo" HorizontalAlignment="Left" Margin="83,0,0,0" Width="183" Background="#FFC500FF" Foreground="White" FontSize="14" Height="30" VerticalAlignment="Center" Click="PcUpdatePickPhotoButton_Click"/>
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Header="Type" Height="50" Margin="0,212,0,0" VerticalAlignment="Top">
+                                <ComboBox x:Name="PcUpdateTypeComboBox">
+                                    <sys:String>Server</sys:String>
+                                    <sys:String>PC</sys:String>
+                                    <sys:String>Laptop</sys:String>
+                                    <sys:String>Working Station</sys:String>
+                                </ComboBox>
+                            </GroupBox>
+                            <GroupBox Header="RAM ID" Height="50" VerticalAlignment="Top" Margin="0,262,0,0">
+                                <TextBox x:Name="PcUpdateRamIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <GroupBox Header="ROM ID" Height="50" VerticalAlignment="Top" Margin="0,312,0,0">
+                                <TextBox x:Name="PcUpdateRomIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <GroupBox Header="CPU ID" Height="50" VerticalAlignment="Top" Margin="0,362,0,0">
+                                <TextBox x:Name="PcUpdateCpuIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Delete" Margin="694,0,0,0">
+                        <Grid>
+                            <GroupBox Header="ID" Height="50" Margin="0,10,0,0" VerticalAlignment="Top">
+                                <TextBox x:Name="PcDeleteIdTextBox" MaxLength="15" PreviewTextInput="OnlyInt_PreviewTextInput" />
+                            </GroupBox>
+                            <Button x:Name="PcDeleteButton" Content="Delete" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Top" Width="268" Background="Red" Foreground="White" Height="30" FontSize="14" Click="PcDeleteButton_Click"/>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="View">
+                <Grid>
+                    <Button x:Name="PcByNameAscBytton" Content="PC by NAME ASC" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20" Width="300" Height="50" Background="#FF18E3EB" Foreground="White" Click="PcByNameAscBytton_Click"/>
+                    <Button x:Name="PcByNameDescBytton" Content="PC by NAME DESC" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20" Width="300" Height="50" Background="#FF18E3EB" Foreground="White" Click="PcByNameDescBytton_Click"/>
+                    <Button x:Name="PcByCpuIdBytton" Content="PC by CPU ID" HorizontalAlignment="Left" Margin="684,10,0,0" VerticalAlignment="Top" FontSize="20" Width="300" Height="50" Background="#FF18E3EB" Foreground="White" Click="PcByCpuIdBytton_Click"/>
+                    <Button x:Name="CpuByManufacturerBytton" Content="CPU by MANUFACTURER" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top" FontSize="20" Width="300" Height="50" Background="#FF18E3EB" Foreground="White" Click="CpuByManufacturerBytton_Click"/>
+                    <Button x:Name="CpuBySeriesBytton" Content="CPU by SERIES" HorizontalAlignment="Center" Margin="0,101,0,0" VerticalAlignment="Top" FontSize="20" Width="300" Height="50" Background="#FF18E3EB" Foreground="White" Click="CpuBySeriesBytton_Click"/>
+                    <Button x:Name="CpuByModelBytton" Content="CPU by MODEL" HorizontalAlignment="Left" Margin="684,101,0,0" VerticalAlignment="Top" FontSize="20" Width="300" Height="50" Background="#FF18E3EB" Foreground="White" Click="CpuByModelBytton_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <DataGrid x:Name="ViewDataGrid" Margin="0,562,0,10" MinColumnWidth="100" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" AutoGeneratingColumn="ViewDataGrid_AutoGeneratingColumn"/>
+    </Grid>
+</Window>
